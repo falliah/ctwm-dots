@@ -1,0 +1,62 @@
+
+Xcursor.theme: Yaru
+
+! Fonts
+
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+URxvt.perl-ext-common: selection-to-clipboard
+
+urxvt*font: -sony-fixed-medium-r-*-*-16-*-*-*-*-*-*-*
+urxvt*boldFont: -sony-fixed-medium-r-*-*-16-*-*-*-*-*-*-*
+urxvt*allowBoldFonts:
+
+urxvt*background: #ffffff
+urvt*foreground: #000000
+
+urxvt*internalBorder: 10
+urxvt*cursorColor: #ffffff
+urxvt*externalBorder: 0
+urxvt*borderWidth: 0
+urxvt*scrollBar: false
+urxvt*saveLines: 3000
+
+! black
+urxvt*color0:     #262626
+urxvt*color8:     #4c4c4c
+
+! pink
+urxvt*color1:     #ac8a8c
+urxvt*color9:     #c49ea0
+
+! green
+urxvt*color2:     #8aac8b
+urxvt*color10:    #9ec49f
+
+! yellow
+urxvt*color3:     #aca98a
+urxvt*color11:    #c4c19e
+
+! purple
+urxvt*color4:     #8f8aac
+urxvt*color12:    #a39ec4
+
+! pink
+urxvt*color5:     #ac8aac
+urxvt*color13:    #c49ec4
+
+! blue
+urxvt*color6:     #8aabac
+urxvt*color14:    #9ec3c4
+
+! white
+urxvt*color7:     #e7e7e7
+urxvt*color15:    #f5f5f5
+
+! geometry
+
+urxvt*geometry: 80x32
+
+
+
+

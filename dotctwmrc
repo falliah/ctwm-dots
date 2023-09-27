@@ -1,0 +1,356 @@
+#ethan's .ctwmrc
+#Emergency Script
+
+"L9" = : r|w|t|m|f : f.twmrc  #shift "L2": source .ctwmrc
+
+#Fonts
+
+MenuFont "-*-courier-medium-r-*-*-14-*-*-*-*-*-*-*"
+TitleFont "-*-courier-medium-r-*-*-14-*-*-*-*-*-*-*"
+IconMAnagerFont "-*-courier-medium-r-*-*-14-*-*-*-*-*-*-*"
+IconFont "-*-courier-medium-r-*-*-14-*-*-*-*-*-*-*"
+ResizeFont "-*-courier-medium-r-*-*-14-*-*-*-*-*-*-*"
+WorkSpaceFont "-*-courier-medium-r-*-*-14-*-*-*-*-*-*-*"
+
+# COLORS                                          
+
+NoDefaults
+
+Color
+{
+  BorderColor           "#d1aac1"
+  DefaultBackground     "#a4b3ab"
+  DefaultForeground     "#ffffff"
+  TitleBackground       "#d1aac1"
+  TitleForeground       "#ffffff" 
+  BorderTileBackground  "#ffffff"	
+  MenuBackground        "#d1aac1"
+  MenuForeground        "#ffffff"
+  IconManagerBackground "#d1aac1"
+  IconManagerForeground "#ffffff"
+  MenuTitleBackground   "#d1aac1"
+  MenuTitleForeground   "#ffffff"
+  MenuShadowColor       "#ffffff"	
+  IconManagerHighlight  "#d1aac1"
+  IconBackground        "#a4b3ab"
+  MapWindowBackground   "#d1aac1"
+  MapWindowForeground   "#ffffff"
+  IconForeground        "#ffffff"
+}
+
+SaveColor					# tell client about these
+{						# settings to "smooth"
+     BorderColor
+     TitleBackground
+     TitleForeground
+     BorderTileBackground
+}
+TitleJustification "center"
+
+# misc ctwm settings                                         
+
+RestartPreviousState			# use previous if any
+TransientHasOccupation			# /..uhh? Try it! What is it?
+AutoFocusToTransients			# Give transients autofocus.
+OpaqueMove				# want to see the window?
+OpaqueResize				# see everthing when you resize
+AutoOccupy				# change occupation automat. (?)
+AutoRelativeResize			# intelligent resizing => easier
+NoGrabServer				# no grab server on popup/opaque (?)
+WarpRingOnScreen			# only warp on current workspace
+ConstrainedMoveTime       0		# How quick to 2click to constrain
+IgnoreLockModifier			# Don't check locks for bindings (CAPS)
+RandomPlacement          "off"		# ask for pos?
+MoveDelta                 3		# dist. 4 move 2 work
+AnimationSpeed            15		# update speed for animated things
+MaxWindowSize		  "1920x1080" # default
+NoStackMode				# ignore stacking reqs from clients
+RaiseWhenAutoUnSqueeze			
+ShortAllWindowsMenus			# Don't show IM and WSM in win.menu
+
+# Ttitlebar config
+
+NoDefaults				# not use default buttons
+
+TitleButtonShadowDepth    0
+TitleShadowDepth          0
+TitleButtonBorderWidth    0
+TitlePadding              0		# frame around TBobjects?
+ButtonIndent              0		# indentated TBbuttons?		
+FramePadding		  0		# frame around TB?
+NoTitleHighlight
+RightTitleButton           "xpm:~/4gapsquare.xpm"    = f.delete
+LeftTitleButton            "xpm:~/miniappleicon.xpm"  =f.iconify
+
+# Borders
+
+UseTileBorder
+ThreeDBorderWidth         0
+Borderwidth               2
+BorderShadowDepth         0
+
+# Workspacemanager config
+
+DontWarpCursorInWMap			# no move to indicated win
+NoShowOccupyAll				# don't show'em in WSM
+ReverseCurrentWorkspace		# reverse colors in curr WS?
+StartInMapState				# buttons or maps?
+
+WMgrHorizButtonIndent     0		# /dist. between buttons
+WMgrVertButtonIndent      0		# \when in button mode
+
+WorkSpaceManagerGeometry  "220x46-305-2" 6 1
+
+WorkSpaces 
+{
+#    N          MC        MTC       BC       FC    RX 
+
+    "1"    { "#a4b3ab" "#a4b3ab" "#a4b3ab" "#a4b3ab" "#a4b3ab"}
+    "2"    { "#a4b3ab" "#a4b3ab" "#a4b3ab" "#a4b3ab" "#a4b3ab"}
+    "3"    { "#a4b3ab" "#a4b3ab" "#a4b3ab" "#a4b3ab" "#a4b3ab"}
+    "4"    { "#a4b3ab" "#a4b3ab" "#a4b3ab" "#a4b3ab" "#a4b3ab"}
+    "5"    { "#a4b3ab" "#a4b3ab" "#a4b3ab" "#a4b3ab" "#a4b3ab"}
+    "6"    { "#a4b3ab" "#a4b3ab" "#a4b3ab" "#a4b3ab" "#a4b3ab"}
+}
+
+#---------------------------------------------------------
+# ICON CONFIG and
+# ICONS
+#---------------------------------------------------------
+
+ForceIcons				# use icons put below, not default
+IconifyByUnmapping			# no icon when iconified
+#NoRaiseOnDeiconify			# raise deiconified wins?
+#AutoRaiseIcons				# raise icons when under cursor
+
+#IconDirectory            ""		# dir. for bitmapI
+IconJustification         "center"	# where put image/title?
+MaxIconTitleWidth         120
+#IconBorderWidth          0             # frame around I?
+#UnknownIcon		  ""		# bitmap to use for unknown?
+
+SchrinkIconTitles			# shrink icon titles a'la Motif
+
+# Where on the screen to put icons and how to place them.
+IconRegion                "140x684+0+0"   North East 130 90  { }
+IconRegion                "140x684+140+0" North East 130 90  { }
+
+
+#---------------------------------------------------------
+# ICON MANAGER CONFIG
+#---------------------------------------------------------
+
+ShowIconManager				# activate/deactivate IM
+SortIconManager				# sorts alphabetically
+NoIconManagerFocus			# !focus the win under cursor in IM
+
+IconManagerGeometry       "80x40-0+0" 1
+
+IconManagerHighlight "#d1aac1"
+
+#---------------------------------------------------------
+# MOUSE POINTER CONFIG and   (cursor = mouse pointer)
+# MOUSE POINTERS
+#---------------------------------------------------------
+
+BorderResizeCursors			# resize curs on border
+
+Cursors
+{
+    Destroy   "pirate"
+}
+
+#menus
+
+NoMenuShadows
+NoBackingStore				# /which is faster,
+
+menu "LinuxPrograms"
+{
+"twm menu"		f.title
+"pin menu"              f.pin
+"restart"		f.twmrc
+"uwurxvt"		!"(urxvt -geometry 30x20 -T uwurxvt)&"
+"execute"               !"(fbrun -nearmouse -w 300 -h 22 -fg black -bg white -title execute)&"
+"uwu"                   f.nop  
+"xeyes"                 !"(xeyes)&"
+"quit"			f.quit
+}
+
+
+menu "Menus"
+{
+"menus"			f.title
+"pin menu"              f.pin
+"+ workspace"           f.nextworkspace
+"- workspace"           f.prevworkspace
+"scrot"                 !"(scrot)"
+"icon manager"          f.showiconmgr
+}
+
+menu "windows"
+{
+    "Windows"      f.title
+    "Pin Menu"     f.pin
+    "Kill"         f.menu "Kill"
+    "Save"         f.saveyourself
+    "Refresh All"  f.refresh
+    "Refresh"      f.winrefresh
+    "Occupy"       f.occupy
+    "Occupy All"   f.occupyall
+    "Vanish"       f.vanish
+    "Iconify"      f.iconify
+    "Resize"       f.resize
+    "RaiseLower"   f.raiselower
+    "Move"         f.move
+    "Raise"        f.raise
+    "Lower"        f.lower
+    "Info"         f.identify
+    "Focus"        f.focus
+    "Unfocus"      f.unfocus
+}
+
+menu "titleops"
+{
+    "Title Bar"    f.title
+    "RaiseLower"   f.raiselower
+    "Iconify"      f.iconify
+    "Info"         f.identify
+    "Focus"        f.focus
+    "Unfocus"      f.unfocus
+    "Refresh"      f.winrefresh
+    "Occupy"       f.occupy
+    "Occupy All"   f.occupyall
+    "Vanish"       f.vanish
+    "Send Delete"  f.delete
+    "Kill Window"  f.destroy
+}
+
+menu "Kill"
+{
+    "Pin menu"     f.pin
+    "Kill Window"  f.destroy
+    "Send Delete"  f.delete
+}
+
+menu "TMenu" 
+{
+    "Title Menu" f.title
+    "Iconify"    f.iconify
+    "Move"       f.move
+    "Raise"      f.raise
+    "Occupy all" f.occupyall
+    "Unoccupy"	 f.occupy 
+}
+
+# More misc settings
+
+IconManagerDontShow
+{
+  "bar"
+  "Bar"
+  "lemonbar"
+  "Lemonbar"
+} 
+
+
+
+OccupyAll 
+{
+ "lemonbar"
+ "bar"
+}
+
+AlwaysOnTop
+{
+     "TWM Icon Manager"
+}
+
+NoTitle 
+{					# optional winlist              
+   "Bar"
+   "lemonbar"
+   "bar"
+   "Lemonbar"
+}
+
+NoBorder
+{
+"Bar"
+"bar"
+"Lemonbar"
+"lemonbar"
+
+}
+
+# FUNCTION DEFINITIONS                                   
+
+Function "move-or-raiselower"  {f.move f.deltastop f.raiselower }
+Function "move-or-lower"       { f.move f.deltastop f.lower }
+Function "move-or-raise"       { f.move f.deltastop f.raise }
+Function "move-or-iconify"     { f.move f.deltastop f.iconify }
+Function "move-or-flip"        { f.move f.deltastop f.raiselower }
+Function "raise-n-focus"       { f.raise f.focus}
+Function "raise-move"          { f.raise f.deltastop f.forcemove }
+Function "blob"                { f.deiconify f.raise f.focus f.lower }
+
+#---------------------------------------------------------
+# MOUSE BUTTON FUNCTIONS
+# BUTTONS	: CONTEXT	: FUNCTION            
+#---------------------------------------------------------
+
+Button1 =	: root		: f.menu "LinuxPrograms"
+#Button1 =	: root		: f.menu "DECPrograms"
+Button3 =	: root		: f.menu "Menus"
+#Button2 =	: root		: f.menu "TwmWindows"
+Button2 =	: root		: f.menu "windows"
+#Button1 = s	: root		: f.menu "Tangentbord"
+#Button2 = s	: root		: f.menu "Exec"
+
+Button1 =	: t		: f.function "raise-move"
+Button2 =	: t|f		: f.raiselower
+Button3 =	: t|f		: f.menu "TMenu"
+
+Button1 =	: f		: f.resize
+
+Button1 = s	: t|f		: f.zoom
+Button2 = s	: t|f		: f.forcemove
+Button3 = s	: t|f		: f.fullzoom
+
+Button1 = m	: t|f|i|m	: f.raiselower
+Button2 = m	: t|f|i		: f.move
+Button3 = m	: t|f|i|m	: f.lower
+
+Button1 =	: i|m		: f.iconify
+Button2 =	: i		: f.move
+Button3 =	: i|m		: f.raiselower
+
+Button1 = m	: window	: f.raiselower
+#Button2 = s|m	: window 	: f.forcemove
+Button3 = m	: window 	: f.resize
+
+#---------------------------------------------------------
+# KEY FUNCTIONS
+# KEYS	= Altkey: CONTEXT	: FUNCTION
+#---------------------------------------------------------
+
+"Tab"	= m	: r|w|i|m|f	: f.warpring "next"
+"Tab"	= c	: r|w|i|m|f	: f.nextworkspace
+"Down"  = m     : window	: f.lower
+"Escape"= m	: r|w|i|m|f	: f.menu "LinuxPrograms"
+#"F1"	=	: r|w|i|m|f	: f.gotoworkspace "1"
+"F2"	=	: r|w|i|m|f	: f.prevworkspace
+"F3"	=	: r|w|i|m|f	: f.nextworkspace
+#"F4"	=	: w|i|m|f	: f.raise
+#"F5"	=	: w|i|m|f	: f.lower
+#"F6"	=	: r|w|i|m|f	: f.warpto
+#"F6"	=	: r|w|i|m|f	: f.gotoworkspace "1"
+#"F7"	=	: r|w|i|m|f	: f.gotoworkspace "2"
+#"F8"	=	: r|w|i|m|f	: f.gotoworkspace "3"
+#"F9"	=	: r|w|i|m|f	: f.gotoworkspace "4"
+#"F10"	=	: r|w|i|m|f	: f.gotoworkspace "5"
+#"F11"	=	: r|w|i|m|f	: f.gotoworkspace "6"
+#"F12"	=	: r|w|i|m|f	: f.gotoworkspace "7"
+#"F13"	=	: r|w|i|m|f	: f.gotoworkspace "8"
+
+

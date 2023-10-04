@@ -5,12 +5,12 @@
 
 #Fonts
 
-MenuFont "-*-courier-medium-r-*-*-14-*-*-*-*-*-*-*"
-TitleFont "-*-courier-medium-r-*-*-14-*-*-*-*-*-*-*"
-IconMAnagerFont "-*-courier-medium-r-*-*-14-*-*-*-*-*-*-*"
-IconFont "-*-courier-medium-r-*-*-14-*-*-*-*-*-*-*"
-ResizeFont "-*-courier-medium-r-*-*-14-*-*-*-*-*-*-*"
-WorkSpaceFont "-*-courier-medium-r-*-*-14-*-*-*-*-*-*-*"
+MenuFont "-*-fixed-*-r-*-*-16-120-*-*-*-*-iso8859-1"
+TitleFont "-*-fixed-*-r-*-*-16-120-*-*-*-*-iso8859-1"
+IconManagerFont "-*-fixed-*-r-*-*-16-120-*-*-*-*-iso8859-1"
+IconFont "-*-fixed-*-r-*-*-16-120-*-*-*-*-iso8859-1"
+ResizeFont "-*-fixed-*-r-*-*-16-120-*-*-*-*-iso8859-1"
+WorkSpaceFont "-*-fixed-*-r-*-*-16-120-*-*-*-*-iso8859-1"
 
 # COLORS                                          
 
@@ -18,22 +18,22 @@ NoDefaults
 
 Color
 {
-  BorderColor           "#d1aac1"
+  BorderColor           "#dabfcf"
   DefaultBackground     "#a4b3ab"
   DefaultForeground     "#ffffff"
-  TitleBackground       "#d1aac1"
+  TitleBackground       "#dabfcf"
   TitleForeground       "#ffffff" 
   BorderTileBackground  "#ffffff"	
-  MenuBackground        "#d1aac1"
+  MenuBackground        "#dabfcf"
   MenuForeground        "#ffffff"
-  IconManagerBackground "#d1aac1"
+  IconManagerBackground "#dabfcf"
   IconManagerForeground "#ffffff"
-  MenuTitleBackground   "#d1aac1"
+  MenuTitleBackground   "#dabfcf"
   MenuTitleForeground   "#ffffff"
   MenuShadowColor       "#ffffff"	
-  IconManagerHighlight  "#d1aac1"
+  IconManagerHighlight  "#dabfcf"
   IconBackground        "#a4b3ab"
-  MapWindowBackground   "#d1aac1"
+  MapWindowBackground   "#dabfcf"
   MapWindowForeground   "#ffffff"
   IconForeground        "#ffffff"
 }
